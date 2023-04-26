@@ -1,7 +1,6 @@
 ﻿using SGS.Interfaces;
 using SGS.Model;
 using SGS.StaticData;
-using SGS.ViewModel;
 using System.Collections.ObjectModel;
 using System.Linq;
 
@@ -24,8 +23,8 @@ namespace SGS.DesignViewModel
         public ObservableCollection<string> Brigades { get; set; } = new();
         public ObservableCollection<EmployeeModel> Employees { get; set; } = new();
         public ObservableCollection<WorkshopModel> Workshops { get; set; } = new();
-        public string Shift { get ; set; }
-        public string Brigade { get;set; }
-       
+        public string Shift { get; set; }
+        public string Brigade { get; set; }
+
     }
 }

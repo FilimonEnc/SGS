@@ -138,9 +138,9 @@ namespace SGS.ViewModel
                         var filePath = Path.Combine(Environment.CurrentDirectory, "selection.json");
                         File.WriteAllText(filePath, json);
                     }
-                    catch(Exception ex)
+                    catch (Exception ex)
                     {
-                        MessageBoxShow("Выбраны не все данные" , "Ошибка", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
+                        MessageBoxShow("Выбраны не все данные", "Ошибка", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
                     }
 
                 }, (obj) =>

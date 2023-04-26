@@ -12,6 +12,6 @@ namespace SGS.Interfaces
         ObservableCollection<CityModel> Cities { get; set; }
         string Shift { get; set; }
         string Brigade { get; set; }
-       
+
     }
 }
