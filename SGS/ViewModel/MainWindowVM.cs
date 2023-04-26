@@ -137,6 +137,8 @@ namespace SGS.ViewModel
 
                         var filePath = Path.Combine(Environment.CurrentDirectory, "selection.json");
                         File.WriteAllText(filePath, json);
+
+                        MessageBoxShow("JSON Файл создан в дирректории программы", "Выполнено", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Information);
                     }
                     catch (Exception ex)
                     {
