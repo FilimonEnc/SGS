@@ -1,0 +1,30 @@
+CREATE DATABASE SGS
+go;
+USE SGS;
+
+CREATE TABLE dbo.City (
+    Id int identity(1,1) primary key,
+    NameCity VARCHAR(30) NOT NULL
+);
+
+CREATE TABLE dbo.Workshop (
+    Id int identity(1,1) primary key,
+    NameWorkshop VARCHAR(30) NOT NULL,
+		CityID INT FOREIGN KEY REFERENCES dbo.City(Id)
+);
+
+CREATE TABLE dbo.Employee (
+    Id int identity(1,1) primary key,
+    NameEmployee VARCHAR(30) NOT NULL,
+		WorkshopId INT FOREIGN KEY REFERENCES dbo.Workshop(Id)
+);
+
+CREATE TABLE dbo.Shift (
+		Id int identity(1,1) primary key,
+    ShiftValue VARCHAR(30) NOT NULL,
+);
+
+CREATE TABLE dbo.Brigade (
+		Id int identity(1,1) primary key,
+    BrigadeValue VARCHAR(30) NOT NULL,
+);
